@@ -1,0 +1,8 @@
+<!-- account.html -->
+{% extends "base.html" %}
+{% block title %}Аккаунт{% endblock %}
+{% block content %}
+    <h2>Інформація про обліковий запис</h2>
+    <p><strong>Ім'я користувача:</strong> {{ current_user.username }}</p>
+    <p><strong>Електронна пошта:</strong> {{ current_user.email }}</p>
+{% endblock %}

@@ -1,0 +1,138 @@
+/* static/css/style.css */
+
+/* Дизайн флеш-повідомлень */
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.flashes li {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #3d3d3d; /* Червоний фон для повідомлень про помилки */
+    color: #ffffff; /* Колір тексту для повідомлень про помилки */
+}
+
+.flashes .success {
+    background-color: #d4edda; /* Зелений фон для успішних повідомлень */
+    color: #155724; /* Колір тексту для успішних повідомлень */
+}
+
+/* Зміна шрифта для всього сайту (застосовується до body) */
+body {
+    font-family: 'Arial', sans-serif; /* Замініть 'Arial' на вибраний вами шрифт */
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Додаткові стилі за необхідності */
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Стилі для форм реєстрації та логіну */
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стилі для полів вводу */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Стилі для кнопок */
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Змінити колір кнопки при наведенні */
+form button:hover {
+    background-color: #505050;
+}
+
+/* Стилі для посилань (наприклад, "Зареєструватися") */
+form a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Змінити колір посилань при наведенні */
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Додаткові стилі для групи посилань у навбарі (наприклад, "Головна", "Вхід", "Реєстрація") */
+.navbar-nav a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Змінити колір посилань у навбарі при наведенні */
+.navbar-nav a:hover {
+    color: #333;
+}
+
+.error-message {
+    color: red;
+}

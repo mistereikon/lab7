@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Список користувачів{% endblock %}
+{% block content %}
+    <h2>Список користувачів</h2>
+    <p><center>Загальна кількість користувачів: {{ total_users }}</center></p>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username }} - {{ user.email }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
